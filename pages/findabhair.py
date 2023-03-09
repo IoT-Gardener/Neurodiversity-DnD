@@ -79,8 +79,6 @@ with st.container():
     However, Findabhair soon discovered that he had a unique talent - an innate understanding of magic that transcended the need for traditional forms of spellcasting. Instead of relying on written incantations, Findabhair learned to channel magic through his memories and instincts, unlocking new and unpredictable forms of magic in the process.
 
     With time and practice, Findabhair honed his skills and became a powerful wizard in his own right. He also learned to embrace his dyslexia, seeing it as a source of strength and creativity rather than a weakness. Findabhair now travels the land, using his unconventional magic to help those in need and prove that dyslexia need not be an obstacle to greatness.
-
-    Despite the challenges he faced, Reginald refused to let his autism define him. Instead, he embraced his differences and used them to his advantage, proving to others that those on the autism spectrum can be powerful, capable, and compassionate leaders. Reginald now travels the land, using his skills as a paladin to defend the innocent and spread the teachings of his deity, always striving to be the best he can be.
     """)
     st.write("---")
 
