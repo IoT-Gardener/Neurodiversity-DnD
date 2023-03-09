@@ -18,16 +18,26 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
     )
 
-
 # Load the assets for the app
 img_path = Path(__file__).parents[0]
 
 character_img = Image.open(f"{img_path}/Findabhair.png")
 
-
 # Set the page title and icon and set layout to "wide" to minimise margains
-st.set_page_config(page_title="Findabhair", page_icon=":dragon:")
+st.set_page_config(page_title="Findabhair", page_icon=":dragon:", initial_sidebar_state="collapsed")
 add_bg_from_local(f"{img_path}/bg.jpg")
+
+# Hide the sidebar
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
 # Header section
 with st.container():
     # Add two columns for page formatting, with a width ratio of 1:1.75

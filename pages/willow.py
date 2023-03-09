@@ -21,11 +21,23 @@ def add_bg_from_local(image_file):
 # Load the assets for the app
 img_path = Path(__file__).parents[0]
 
-character_img = Image.open(f"{img_path}/Darius.png")
+character_img = Image.open(f"{img_path}/Willow.png")
 
 # Set the page title and icon and set layout to "wide" to minimise margains
-st.set_page_config(page_title="Darius", page_icon=":dragon:")
+st.set_page_config(page_title="Willow", page_icon=":dragon:", initial_sidebar_state="collapsed")
 add_bg_from_local(f"{img_path}/bg.jpg")
+
+# Hide the sidebar
+st.markdown(
+    """
+<style>
+    [data-testid="collapsedControl"] {
+        display: none
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
 
 # Header section
 with st.container():
@@ -36,8 +48,8 @@ with st.container():
     with about_left_col:
         # Add title
         st.write("**Neurodiversity Celebration Week**")
-        st.title("Darius Dingleberry")
-        st.header("Level 5 Bard with Anxiety")
+        st.title("Willow Wildheart")
+        st.header("Level 4 Druid with ADHD")
     
     # Add content to the right column
     with about_right_col:
@@ -50,24 +62,24 @@ with st.container():
 # Stats section
 with st.container():
     col1, col2, col3, col4, col5, col6 = st.columns(6)
-    col1.metric("Str", 9, -1, help="Strength, measuring physical power")
-    col2.metric("Con", 12, 1, help="Dexterity, measuring agility")
-    col3.metric("Dex", 12, 1, help="Constitution, measuring endurance")
-    col4.metric("Int", 17, 3, help="Intelligence, measuring reasoning and memory")
-    col5.metric("Wis", 16, 3, help="Wisdom, measuring Perception and Insight")
-    col6.metric("Cha", 14, 2, help="Charisma, measuring force of Personality")
+    col1.metric("Str", 14, 2, help="Strength, measuring physical power")
+    col2.metric("Con", 15, 2, help="Dexterity, measuring agility")
+    col3.metric("Dex", 13, 1, help="Constitution, measuring endurance")
+    col4.metric("Int", 15, 2, help="Intelligence, measuring reasoning and memory")
+    col5.metric("Wis", 18, 4, help="Wisdom, measuring Perception and Insight")
+    col6.metric("Cha", 11, 0, help="Charisma, measuring force of Personality")
 
 # Backstory section
 with st.container():
     st.title("Backstory")
     st.write("""
-    Darius was born into a family of bards, known for their musical talent and storytelling prowess. However, from a young age, Darius struggled with anxiety, feeling overwhelmed by new experiences and social situations. Despite his natural musical ability, he found it difficult to perform in front of others, leading him to withdraw from the bardic community and seek solace in his music.
+    Willow was born with a deep connection to the natural world, but from a young age, she struggled with ADHD, finding it difficult to focus and stay on task. Despite her love for nature and her strong connection to the wilderness, Willow found it challenging to follow the strict teachings of the druidic order.
 
-    As Darius practiced and honed his skills, he also learned to manage his anxiety. He discovered that playing his lute and singing helped him to calm his nerves and find inner peace. With time and practice, he gained the confidence to perform in front of others, using his music to spread hope and joy to those around him.
+    However, Willow refused to let her ADHD hold her back. She struck out on her own, using her connection to the natural world to explore and understand the mysteries of the wilderness. Her adventures led her to discover a unique magic, one that was wild and unpredictable, much like her own thoughts and emotions.
 
-    Despite his struggles with anxiety, Darius never lost his love for adventure. He joined a group of adventurers, using his bardic talents to lift the spirits of his companions and bolster their resolve in the face of danger. His anxiety was still a constant companion, but he refused to let it hold him back, using it as a source of motivation to overcome his fears and become the best bard he could be.
+    Willow quickly learned to harness her new-found power, using it to protect the natural world and the creatures that called it home. Despite her unorthodox approach, Willow quickly gained a reputation as one of the most powerful druids in the land, using her wild magic to bring balance to an otherwise chaotic world.
 
-    Darius's experiences have taught him that everyone has their own struggles and that it's important to be kind to yourself and others. He now travels the land, using his music to spread hope and comfort to those in need, always striving to be the best he can be despite the challenges he faces.
+    Despite the challenges she faced, Willow never lost her love for the natural world and her desire to protect it. She now travels the land, using her skills as a druid and her wild magic to defend the innocent and restore balance to the wilderness, always striving to be the best she can be. Willow is a shining example of how those with ADHD can channel their differences into strengths and make a positive impact on the world.
     """)
     st.write("---")
 
