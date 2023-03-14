@@ -50,6 +50,7 @@ with st.container():
         st.write("**Neurodiversity Celebration Week**")
         st.title("Sir Reginald the True")
         st.header("Level 10 Autistic Paladin")
+        st.write("Find all 5 charcters to spell the secret word and enter the draw on the Advancing Analytics stand. Secret letter: **R**")
     
     # Add content to the right column
     with about_right_col:
