@@ -25,17 +25,6 @@ img_path = Path(__file__).parents[0]
 st.set_page_config(page_title="Home", page_icon=":dragon:", initial_sidebar_state="collapsed")
 add_bg_from_local(f"{img_path}/bg.jpg")
 
-st.markdown(
-    """
-<style>
-    [data-testid="collapsedControl"] {
-        display: none
-    }
-</style>
-""",
-    unsafe_allow_html=True,
-)
-
 # About section
 with st.container():
     st.title("What is Neurodiversity Celebration Week?")

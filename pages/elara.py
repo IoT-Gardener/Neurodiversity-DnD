@@ -27,18 +27,6 @@ character_img = Image.open(f"{img_path}/Elara.png")
 st.set_page_config(page_title="Elara", page_icon=":dragon:", initial_sidebar_state="collapsed")
 add_bg_from_local(f"{img_path}/bg.jpg")
 
-# Hide the sidebar
-st.markdown(
-    """
-<style>
-    [data-testid="collapsedControl"] {
-        display: none
-    }
-</style>
-""",
-    unsafe_allow_html=True,
-)
-
 # Header section
 with st.container():
     # Add two columns for page formatting, with a width ratio of 1:1.75
