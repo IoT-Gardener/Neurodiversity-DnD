@@ -22,7 +22,7 @@ def add_bg_from_local(image_file):
 img_path = Path(__file__).parents[0]
 
 # Set the page title and icon and set layout to "wide" to minimise margains
-st.set_page_config(page_title="Home", page_icon=":dragon:", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Home", page_icon=":dragon:")
 add_bg_from_local(f"{img_path}/bg.jpg")
 
 # About section

@@ -24,7 +24,7 @@ img_path = Path(__file__).parents[0]
 character_img = Image.open(f"{img_path}/Willow.png")
 
 # Set the page title and icon and set layout to "wide" to minimise margains
-st.set_page_config(page_title="Willow", page_icon=":dragon:", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Willow", page_icon=":dragon:")
 add_bg_from_local(f"{img_path}/bg.jpg")
 
 # Header section
